@@ -16,18 +16,19 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "TestFramework2"
-  s.version      = "0.0.1"
-  s.summary      = "A short description of TestFramework2."
+  s.version      = "1.0.0"
+  s.summary      = "It's a test framework to learn how to implement Framework and deploy it to Cocoapods."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = <<-DESC
-                   DESC
+  s.description  = "Test it again and again."
+#<<-DESC
+ #                  DESC
 
-  s.homepage     = "http://EXAMPLE/TestFramework2"
+  s.homepage     = "https://www.tarams.com"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -79,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/gowtham-namuri/test-framework", :tag => "1.0.0" }
+  s.source       = { :git => "https://github.com/gowtham-namuri/test-framework.git", :tag => "1.0.0" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -90,7 +91,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
+  s.source_files  = "Classes", "Classes/**/*.{h,m,swift}"
   s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"

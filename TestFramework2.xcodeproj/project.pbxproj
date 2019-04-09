@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		656FAA84225C7996006FAACD /* TestFramework2.h in Headers */ = {isa = PBXBuildFile; fileRef = 656FAA82225C7996006FAACD /* TestFramework2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		656FAA8B225C79A6006FAACD /* TLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656FAA8A225C79A6006FAACD /* TLog.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		656FAA7F225C7996006FAACD /* TestFramework2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TestFramework2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		656FAA82225C7996006FAACD /* TestFramework2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestFramework2.h; sourceTree = "<group>"; };
 		656FAA83225C7996006FAACD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		656FAA8A225C79A6006FAACD /* TLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLog.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				656FAA82225C7996006FAACD /* TestFramework2.h */,
 				656FAA83225C7996006FAACD /* Info.plist */,
+				656FAA8A225C79A6006FAACD /* TLog.swift */,
 			);
 			path = TestFramework2;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					656FAA7E225C7996006FAACD = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				656FAA8B225C79A6006FAACD /* TLog.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +266,7 @@
 		656FAA88225C7996006FAACD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -277,6 +283,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = tarams.TestFramework2;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,6 +292,7 @@
 		656FAA89225C7996006FAACD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;

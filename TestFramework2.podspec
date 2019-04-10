@@ -10,5 +10,6 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "12.0"
   s.source       = { :git => "https://github.com/gowtham-namuri/test-framework.git", :tag => "1.0.0" }
   s.version      = "1.0.0"
-  s.source_files  = "TLog"
+  s.source_files  = "TestFramework2/*.{h,m,swift}"
+  s.swift_version = "4.2" 
 end
